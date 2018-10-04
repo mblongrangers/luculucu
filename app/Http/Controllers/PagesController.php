@@ -18,13 +18,13 @@ class PagesController extends Controller
     }
     public function contact()
     {
-    	$number = '085219101848';
+    	$number = 85219101848;
     	$email = '@gmail.com';
     	return view ('contact', compact('number','email'));
     }
     public function profile()
     {
-    	$id = '123456';
+    	$id = 123456;
     	return view ('profile', compact('id')); 
     }
 }
