@@ -11,7 +11,6 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
@@ -44,6 +43,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('contact') }}">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('feedback') }}">Feedback</a>
                         </li>
                         @guest
                             <li class="nav-item">

@@ -12,7 +12,7 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                    <form method="POST" action="{{ route('send.contact') }}">
+                    <form method="POST" action="{{ route('send.feedback') }}">
                         @csrf
                       <div class="form-group">
                         <label>Title</label>
