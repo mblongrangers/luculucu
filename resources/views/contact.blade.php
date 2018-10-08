@@ -1,9 +1,22 @@
-	
-<div>		
-	<b> {{ $number }}</b>
+@extends('layouts.app')
+@section('content')
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">Contact</div>
+
+                <div class="card-body">
+                    @if (session('status'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('status') }}
+                        </div>
+                    @endif
+
+                    You are logged in Contact!
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-	<b>{{ $email }}</b>
-
-
-<a href="{{ route('home') }}">Home</a>
-<a href="{{ route('profile') }}">Profile</a>	
+@endsection
