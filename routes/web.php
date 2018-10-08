@@ -10,10 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('profile', 'PagesController@profile');
-
-Route::get('contact', 'PagesController@contact');
-
-Route::get('home', 'PagesController@home');
-
+Route::get('blog/{title}', 'PagesController@blog')->name('blog');
+Route::get('profile', 'PagesController@profile')->name('profile');
+Route::get('contact', 'PagesController@contact')->name('contact');
+Route::get('home', 'PagesController@home')->name('home');
 Route::get('/', 'PagesController@root');
