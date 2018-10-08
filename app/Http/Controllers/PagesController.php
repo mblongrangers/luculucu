@@ -27,7 +27,7 @@ class PagesController extends Controller
     	$id = 123456;
     	return view ('profile', compact('id')); 
     }
-    public function blog($title)
+    public function blog($titwle)
     {
     	return view ('blog',compact('title')); 
     }
